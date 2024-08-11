@@ -4,8 +4,8 @@ const WebSocketContext = React.createContext<any>(null);
 export { WebSocketContext };
 
 export default ({ children }: { children: React.ReactNode }) => {
-  const webSocketUrl = `ws://175.106.97.18:5000`;
-  //const webSocketUrl = `ws://localhost:5000`;
+  // const webSocketUrl = `ws://175.106.97.18:5000`;
+  const webSocketUrl = `ws://localhost:3000`;
   let ws = useRef<WebSocket | null>(null);
 
   if (!ws.current) {
